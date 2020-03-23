@@ -3,7 +3,6 @@
 //  hw3
 //
 //  Created by Hasan Furkan Vural on 20.11.2018.
-//  150140029
 //  Copyright © 2018 H. Furkan Vural. All rights reserved.
 //
 /**********************************************************************************************************************
@@ -19,6 +18,8 @@
 #include <fstream>
 #include <string>
 #include <time.h>
+#include "HashNode.h"
+
 #define maxsizevocab 13423
 #define maxsizesearch 1501
 #define m 17863
@@ -31,17 +32,6 @@
 
 using namespace std;
 
-class HashNode {
-    int linenum;
-    string value;
-public:
-    void getnum(int x){ linenum = x; };
-    void getval(string x) { value = x; };
-    int outnum (){ return linenum; };
-    string outval(){ return value;};
-    
-    HashNode (){ };
-};
 
 int hlinear(int k, int i);
 int hdouble(int k, int i);
